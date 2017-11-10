@@ -32,18 +32,18 @@ g1 <- g1 + geom_line()
 g1 <- g1 + theme(text = element_text(size=15), axis.text.x = element_text(angle=45, hjust=1))
 g1 <- g1 + xlab("Time") + ylab("Revenue ($M)")
 g1 <- g1 + theme(legend.title=element_blank())
-g1 <- g1 + ggtitle("NVIDIA Datacenter & Auto Sales\nQ1FY15 to Q1FY18")
+g1 <- g1 + ggtitle("NVIDIA Datacenter & Auto Sales\nQ1FY15 to Q3FY18")
 
-ggsave("nvidia-dc-auto-sales-q1fy18.png", g1, width=10)
+ggsave("nvidia-dc-auto-sales-q3fy18.png", g1, width=10)
 
 g2 <- ggplot(data = Percents_Df, aes(x=Date, y=value, color=Category)) 
 g2 <- g2 + geom_line()
 g2 <- g2 + theme(text = element_text(size=15), axis.text.x = element_text(angle=45, hjust=1))
 g2 <- g2 + xlab("Time") + ylab("%")
 g2 <- g2 + theme(legend.title=element_blank())
-g2 <- g2 + ggtitle("NVIDIA Datacenter and Auto Segments\nPerentage of Total Revenue\nQ1FY15 to Q1FY18")
+g2 <- g2 + ggtitle("NVIDIA Datacenter and Auto Segments\nPerentage of Total Revenue\nQ1FY15 to Q3FY18")
 
-ggsave("nvidia-dc-auto-rd-percent-q1fy18.png", g2, width=10)
+ggsave("nvidia-dc-auto-rd-percent-q3fy18.png", g2, width=10)
 
 
 
